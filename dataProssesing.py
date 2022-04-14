@@ -93,7 +93,7 @@ casino_users = casino_users.drop_duplicates(subset=['UserProfileId'])
 print("Removed. No of duplicates:")
 print(casino_users.duplicated(['UserProfileId']).sum())
 
-casino_users.to_csv('Casino Users Clean.csv')
+casino_users.to_csv('Casino Users New.csv')
 
 #Customer Wallet Data
 customer_wallet.Created = pd.to_datetime(customer_wallet.Created)
@@ -113,7 +113,7 @@ customer_wallet.Interval = customer_wallet.Interval.fillna(0).astype(int)
 print('Customer Wallet Duplicate Rows:')
 print(customer_wallet.duplicated().sum())
 
-customer_wallet.to_csv('Customer Wallet Clean.csv')
+customer_wallet.to_csv('Customer Wallet New.csv')
 
 #Casino Games
 print('Casino Games Duplicate Rows')

@@ -1,2 +1,4 @@
 # ignore all csv files
-*.csv
+graphs/
+input data/
+*.zip
